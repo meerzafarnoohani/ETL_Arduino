@@ -1,6 +1,6 @@
-# ETL Arduino — Embedded Template Library
+# ETL (Embedded Template Library) Arduino
 
-> Fixed-size containers and state machines for Arduino & ESP32 — **zero heap allocation, zero fragmentation.**
+> Fixed-size containers and state machines for Arduino & ESP32 **zero heap allocation, zero fragmentation.**
 
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue?logo=arduino)](https://github.com/meerzafarnoohani/ETL_Arduino)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
