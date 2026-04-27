@@ -12,11 +12,11 @@
 
 Arduino's `String` class and STL containers (`std::vector`, `std::map`) use **dynamic memory allocation** (heap). On microcontrollers this causes:
 
-- 🔴 **Heap fragmentation** — memory gets swiss-cheesed over time
-- 🔴 **Unpredictable crashes** — allocation fails silently
-- 🔴 **Hard to debug** — symptoms appear far from the root cause
+- 🔴 **Heap fragmentation**: memory gets swiss-cheesed over time
+- 🔴 **Unpredictable crashes**: Allocation fails silently
+- 🔴 **Hard to debug**: Symptoms appear far from the root cause
 
-ETL_Arduino fixes this by making the **capacity a compile-time constant**. All memory lives on the stack or in static storage — no `malloc`, no `new`, no surprises.
+ETL_Arduino fixes this by making the **capacity a compile-time constant**. All memory lives on the stack or in static storage, no `malloc`, no `new`, no surprises.
 
 ---
 
@@ -172,7 +172,7 @@ fsm.is_in(RUNNING);             // true
 | `string<64>` | 65 bytes |
 | `state_machine<3 states, 6 transitions>` | ~120 bytes |
 
-All memory is allocated at **compile time** — the heap is untouched.
+All memory is allocated at **compile time**, the heap is untouched.
 
 ---
 
@@ -208,10 +208,10 @@ Contributions welcome! Ideas for future modules:
 ## Credits
 
 Inspired by the [Embedded Template Library](https://www.etlcpp.com) by John Wellbelove.
-Re-implemented from scratch for direct Arduino/ESP32 IDE compatibility by **Meer Zafarullah Noohani** — [github.com/meerzafarnoohani](https://github.com/meerzafarnoohani).
+Re-implemented from scratch for direct Arduino/ESP32 IDE compatibility by **Meer Zafarullah Noohani** [github.com/meerzafarnoohani](https://github.com/meerzafarnoohani).
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
